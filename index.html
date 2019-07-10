@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <title>To Do List Made By Zaletko Irina</title>
+</head>
+<body>
+    <header><h1>TO DO LIST &#10000;</h1></header>
+    <div class='consist'>
+            <form action="">
+                    <div class="form_input">
+                        <div><p class = "input_task_text">Task: <input id='todoInput' placeholder="Enter your task" ></p></div><br>
+                        <div><p class = "input_task_text">Date: <input id ='dates' type="date"></p></div><br>
+                        <button id ="createTodo" class="but">Add Task &#10004</button>
+                    </div>
+                </form>
+        <div class ='to_do'>
+            <h2>In to DO (<span style="color:red;" class="count">0</span>)</h2>
+            <ul>
+            </ul>
+            <button class='delete_all'>DELETE ALL 	&nbsp;<i class="fa fa-trash"></i> </button>
+        </div>
+        <div class="in_prog">
+            <h2>In progress (<span style="color:red;" class="count">0</span>)</h2>
+            <ul></ul>
+            <button class="delete_all">DELETE ALL &nbsp;<i class="fa fa-trash"></i></button>
+        </div>
+        <div class="done">
+            <h2>Done (<span style="color:red;" class="count">0</span>)</h2>
+            <ul></ul>
+            <button class='delete_all'>DELETE ALL &nbsp; <i class="fa fa-trash"></i></button>
+        </div>
+    </div>
+    <footer>
+        <div class = "social_icons">
+                <a href="https://t.me/IrochkaZ" target="_blank"><img src="img/telegram.svg" title="Telegram"></a>
+                <a href="#" target="_blank"><img src="img/spotify.svg" title="Spotify"></a>
+                <a href="https://github.com/IrochkaZ" target="_blank"><img src="img/github.svg" title="GitHub"></a>
+                <a href="https://vk.com/irinazaletko" target="_blank"><img src="img/vk.svg" title="VK"></a>
+        </div>
+        <p class = "sosial_copyright"> Copyright © 2019 IrochkaZ</p>
+    </footer>
+    <div id="myModal" class="modal">
+		<div class="modalContent modalSuccess">
+			<div class="modalHeader">
+				<!-- <span class="modalClose" data-close="true" title="Close">&times;</span> -->
+				Confirm your action
+			</div>
+			<div class="modalBody">
+				<p>Want to delete all tasks?</p>
+			</div>
+			<div class="modalFooter">
+				<div>
+					<button type="button" class="btn cancel" data-close="true">Сancel</button>
+					<button type="button" class="btn btnok">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+    <script src="javascript.js" type="text/javascript">
+    </script>
+</html>
